@@ -4,14 +4,16 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 z-50 p-6">
-      <Image
-        src="/images/logo.png"
-        alt="Logo"
-        width={120}
-        height={40}
-        priority
-        className="w-auto h-auto scale-90 origin-top-left"
-      />
+      <div className="relative w-[12vw] max-w-[90px] min-w-[60px] aspect-[6036/4164]">
+        <Image
+          src="/images/logo.png"
+          alt="Logo"
+          fill
+          priority
+          sizes="(max-width: 768px) 100px, 12vw"
+          className="object-contain object-left"
+        />
+      </div>
     </header>
   );
 };
