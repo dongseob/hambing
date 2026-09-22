@@ -10,7 +10,7 @@ const Header = () => {
         width={120}
         height={40}
         priority
-        className="w-auto h-auto"
+        className="w-auto h-auto scale-90 origin-top-left"
       />
     </header>
   );
