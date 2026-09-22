@@ -29,13 +29,13 @@ const Home = () => {
         />
       </section>
 
-      <section className="w-full max-w-7xl mx-auto pt-10 pb-5 px-4 sm:px-6 lg:px-8">
+      <section className="w-full pb-5">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={sectionVariants}
-          className="w-full overflow-hidden rounded-2xl"
+          className="w-full overflow-hidden"
         >
           <Image
             src="/images/homeSection2.png"
@@ -44,22 +44,22 @@ const Home = () => {
             height={0}
             sizes="100vw"
             priority={false}
-            className="w-full h-auto"
+            className="w-full h-auto block"
           />
         </motion.div>
       </section>
 
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-5">
+      <div className="w-full my-5">
         <div className="w-full h-[1px] bg-neutral-300" />
       </div>
 
-      <section className="w-full max-w-7xl mx-auto pt-5 pb-10 px-4 sm:px-6 lg:px-8">
+      <section className="w-full pt-5 pb-10">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={sectionVariants}
-          className="w-full overflow-hidden rounded-2xl"
+          className="w-full overflow-hidden"
         >
           <Image
             src="/images/homeSection3.jpg"
@@ -68,7 +68,7 @@ const Home = () => {
             height={0}
             sizes="100vw"
             priority={false}
-            className="w-full h-auto"
+            className="w-full h-auto block"
           />
         </motion.div>
       </section>
