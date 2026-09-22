@@ -29,7 +29,7 @@ const Home = () => {
         />
       </section>
 
-      <section className="w-full pb-5">
+      <section className="w-full">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -37,23 +37,21 @@ const Home = () => {
           variants={sectionVariants}
           className="w-full overflow-hidden"
         >
-          <Image
-            src="/images/homeSection2.png"
-            alt="Home Section 2"
-            width={0}
-            height={0}
-            sizes="100vw"
-            priority={false}
-            className="w-full h-auto block"
-          />
+          {/* 부모 요소 overflow-hidden 및 이미지 확대(scale)로 1px 테두리 숨김 */}
+          <div className="w-full overflow-hidden">
+            <Image
+              src="/images/homeSection2.png"
+              alt="Home Section 2"
+              width={0}
+              height={0}
+              sizes="100vw"
+              priority={false}
+              className="w-full h-auto block scale-[1.005] origin-center"
+            />
+          </div>
         </motion.div>
       </section>
-
-      <div className="w-full my-5">
-        <div className="w-full h-[1px] bg-neutral-300" />
-      </div>
-
-      <section className="w-full pt-5 pb-10">
+      <section className="w-full pb-10">
         <motion.div
           initial="hidden"
           whileInView="visible"
